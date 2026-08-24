@@ -1,0 +1,8 @@
+{
+  "name": "DARKPEDIA",
+  "description": "Dünyanın ən qaranlıq məlumat ensiklopediyası - Dark, mysterious, paranormal, and unexplained phenomena encyclopedia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

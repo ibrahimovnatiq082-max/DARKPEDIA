@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Georgia', 'Cambria', 'Times New Roman', Times, serif;
+    --font-display: 'Georgia', 'Cambria', serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  html, body, #root {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #1a1a1a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .dark body, body.dark {
+    background-color: #121214;
+    color: #e4e4e7;
+  }
+}
+
+/* Typography Helpers */
+.font-serif-wiki {
+  font-family: 'Georgia', 'Cambria', 'Times New Roman', Times, serif;
+}
+
+.font-display-wiki {
+  font-family: 'Georgia', 'Cambria', serif;
+}
+
+/* Semantic Theme Helpers */
+.text-light-text { color: #1a1a1a; }
+.dark .text-light-text, .dark .text-dark-text, .text-dark-text { color: #e4e4e7; }
+
+.text-light-muted { color: #52525b; }
+.dark .text-light-muted, .dark .text-dark-muted, .text-dark-muted { color: #a1a1aa; }
+
+.bg-light-surface { background-color: #ffffff; }
+.dark .bg-light-surface, .dark .bg-dark-card, .bg-dark-card { background-color: #18181b; }
+
+.bg-light-bg { background-color: #ffffff; }
+.dark .bg-light-bg, .dark .bg-dark-surface, .bg-dark-surface { background-color: #121214; }
+
+.border-light-border { border-color: #e4e4e7; }
+.dark .border-light-border, .dark .border-dark-border, .border-dark-border { border-color: #27272a; }
+
+.text-accent-blood { color: #8B0000; }
+.dark .text-accent-blood, .text-accent-blood-light, .dark .text-accent-blood-light { color: #ef4444; }
+.bg-accent-blood { background-color: #8B0000; }
+.bg-accent-blood:hover { background-color: #700000; }
+
+.wiki-link {
+  color: #8B0000;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.wiki-link:hover {
+  color: #700000;
+}
+.dark .wiki-link {
+  color: #f87171;
+}
+
+/* Clean minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #18181b;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 3px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B0000;
+}
+
